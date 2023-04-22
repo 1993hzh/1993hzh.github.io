@@ -12,7 +12,8 @@ github_username:  1993hzh
 linkedin_username: 1993hzh
 
 # Build settings
-remote_theme: jekyll-theme-clean-blog
+# theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
 

@@ -12,7 +12,7 @@ github_username:  1993hzh
 linkedin_username: 1993hzh
 
 # Build settings
-theme: jekyll-theme-clean-blog
+remote_theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
 

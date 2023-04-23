@@ -57,17 +57,21 @@ table th:nth-of-type(5) {
 }
 table {
   font-size: 0.7rem;
-  border: 1em;
+}
+table th,td {
+    border-style: solid;
 }
 </style>
 Types            | Description | Lockable | Exclusible | Executable|
----------------- | ------------|:--------:|:----------:|:---------:|
-**Job**          |executable async job, used in the following scenarios:</br></br>*   **start process asynchronously**</br>*   **activities executed asynchronously**</br>*   **activities triggered asynchronously**</br>*   SendEventTask activity</br>*   ParallelMultiInstance activity</br>*   **CallActivity marked as completeAsync**</br>*   EventRegistry event received asynchronously</br>*   batch migrate process instance</br></br>besides the above business usage, async job can also be transformed when:</br></br>*   **activate suspended job**</br>*   **re-run dead-letter job**</br>*   **timer job overdue**</br>*   complete external-worker job|      ✅  |    ✅       |    ✅  |
-**TimerJob**     |delayed or repeated async job, will be used in the following scenarios:</br></br>*   **process contains TimerStartEvent**</br>*   **Event Sub-process with TimerStartEvent**</br>*   **Intermediate timer catching event**</br>*   **Boundary timer event**</br>*   **delayed suspend or activate process definition**</br>*   periodically clean historical process data</br></br>besides the above business usage, timer job can also be transformed when:</br></br>*   **retry async job when possible**</br>*   **activate suspended job which was a timer job originally**|      ✅  |    ✅       |    ⛔️  |
+:---------------:| ------------|:--------:|:----------:|:---------:|
+**Job**          |executable async job, used in the following scenarios:<br><br>*   **start process asynchronously**<br>*   **activities executed asynchronously**<br>*   **activities triggered asynchronously**<br>*   SendEventTask activity<br>*   ParallelMultiInstance activity<br>*   **CallActivity marked as completeAsync**<br>*   EventRegistry event received asynchronously<br>*   batch migrate process instance<br><br>besides the above business usage, async job can also be transformed when:<br><br>*   **activate suspended job**<br>*   **re-run dead-letter job**<br>*   **timer job overdue**<br>*   complete external-worker job|      ✅  |    ✅       |    ✅  |
+**TimerJob**     |delayed or repeated async job, will be used in the following scenarios:<br><br>*   **process contains TimerStartEvent**<br>*   **Event Sub-process with TimerStartEvent**<br>*   **Intermediate timer catching event**<br>*   **Boundary timer event**<br>*   **delayed suspend or activate process definition**<br>*   periodically clean historical process data<br><br>besides the above business usage, timer job can also be transformed when:<br><br>*   **retry async job when possible**<br>*   **activate suspended job which was a timer job originally**|      ✅  |    ✅       |    ⛔️  |
 **HistoryJob**   | executable job for only [audit process execution](https://www.flowable.com/open-source/docs/bpmn/ch11-History) in asynchronous mode, the audited info depends on the historyLevel set in configuration |      ✅  |    ⛔️       |    ✅  |
-**SuspendedJob** |suspended job is actually a job status which is not able to execute directly, will be used in the following scenarios:</br></br>*   set breakpoint when debugging execution</br>*   debugging execution exception</br>*   **when related process instance or process definition is suspended**</br></br>besides the above usage, suspended job can also be transformed when:</br></br>*   **suspend async job, timer job or external-worker job**| ⛔️       |    ✅  | ⛔️       |
+**SuspendedJob** |suspended job is actually a job status which is not able to execute directly, will be used in the following scenarios:<br><br>*   set breakpoint when debugging execution<br>*   debugging execution exception<br>*   **when related process instance or process definition is suspended**<br><br>besides the above usage, suspended job can also be transformed when:<br><br>*   **suspend async job, timer job or external-worker job**| ⛔️       |    ✅  | ⛔️       |
 **DeadLetterJob**| dead-letter job is another job status which is not able to execute directly, only used when executable job failed after retries exhausted. | ⛔️       |    ✅  | ⛔️       |
 ~~ExternalWorkerJob~~| specific job type for ExternalWorkerTask|      ✅  |    ✅       |    ⛔️  |
+
+***
 
 Job Finite-State Machine
 ------------------------

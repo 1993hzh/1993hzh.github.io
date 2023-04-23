@@ -17,7 +17,8 @@ github_username:  1993hzh
 linkedin_username: 1993hzh
 
 # Build settings
-theme: jekyll-theme-clean-blog
+# comment below line to avoid github build issue
+# theme: jekyll-theme-clean-blog
 remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed

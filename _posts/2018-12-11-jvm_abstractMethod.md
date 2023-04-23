@@ -4,7 +4,7 @@ title: "java.lang.AbstractMethodError【二】——浅析JVM中invokevirtual与
 # subtitle: "This is the post subtitle."
 date:   2018-12-11 11:47:43 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'Chinese'
+categories: 'cn'
 ---
 
 ### 前言

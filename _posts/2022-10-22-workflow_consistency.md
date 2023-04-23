@@ -4,7 +4,7 @@ title: "Workflow微服务开发中的一致性问题"
 # subtitle: "This is the post subtitle."
 date:   2022-10-22 14:40:13 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'Chinese'
+categories: 'cn'
 ---
 
 一致性是分布式系统中常见的问题，大多数业务系统在CAP中都会选择AP而牺牲强一致性，workflow微服务也不例外，这篇文章想结合所开发的workflow微服务的两个典型的业务场景来聊一聊如何保障最终一致性。
@@ -16,7 +16,7 @@ UserTask是审批流的核心组成部分，也是BPMN中最常见的task类型�
 2. form，用户审批时一般在UI上需要展示相关信息，因此除了字段类型和数据之外还需要存储UI展示所需要的数据，与UI组件有一定的耦合。
 目前我们线上的业务方使用场景如下图：
 
-![2022101301 copy](/assets/images/posts/2022-10-22-1.jpg)
+![2022101301 copy](/assets/images/posts/2022-10-22/1.jpg)
 
 这里可以看到有两个主要的业务场景：1）创建user task实例，需要通知下游Todo模块以保证相关用户可以收到提醒；2）用户完成user task，需要保证Todo被标记为已完成同时通知服务侧执行下一步。
 
@@ -28,7 +28,7 @@ UserTask是审批流的核心组成部分，也是BPMN中最常见的task类型�
 
 可以注意到这里两个场景可以构成一个业务闭环，userTask从创建到完成每一次状态跃迁都是由event驱动，如图所示：
 
-![1](/assets/images/posts/2022-10-22-3.jpg)
+![1](/assets/images/posts/2022-10-22/3.jpg)
 
 已知TaskCreated->TaskNotified的时候可能会出现消息丢失，因此我们会定时轮询状态为TaskCreated并且updated_at超出1min的进行消息重发，而TaskNotified->TaskCompleted也可能出现消息丢失，因为前文提到上游单体系统只是将event的发出时间推迟并没有保证消息不丢，因此在这种场景下，我们同样通过轮询状态为TaskNotified并且updated_at超出1d的task，然后到Todo侧查询是否存在未完成的Todo，如果存在意味着用户确实没有完成相应的task则将updated_at更新为current，如果不存在则说明用户已经完成操作，在workflow服务端将task complete从而保证流程能正常走下去。
 至于为什么TaskCreated可以直接跃迁至TaskCompleted，是因为可能出现前文提到的Todo的确认消息丢失或者延迟，用户操作了complete，workflow服务在收到Todo确认之前先收到了complete task的消息，这种情况下也是可以直接将状态标记为completed。
@@ -36,7 +36,7 @@ UserTask是审批流的核心组成部分，也是BPMN中最常见的task类型�
 ### ServiceTask执行的一致性
 ServiceTask是BPMN中常见的一种task类型，在内嵌式的业务编排工作流当中常被用做执行本地Java代码以满足业务扩展需求，但在微服务架构下业务代码分布在各个业务节点，flowable默认的实现很明显并不能满足我们的需求，为此我们提供了基于service query（读）和service command（写）的执行策略，当流程实例走到ServiceTask的时候会发送消息对应的topic，下游消费者订阅相关topic之后执行对应的业务代码并通过消息发送执行结果，服务侧会订阅该topic并根据返回结果是否出错决定走什么分支，整体流程如下：
 
-![2022101301](/assets/images/posts/2022-10-22-2.jpg)
+![2022101301](/assets/images/posts/2022-10-22/2.jpg)
 
 其中关于task的输入输出是另外一个大的话题，这里暂且不表，我们仅关注于跨节点可能引入的状态不一致问题。
 与UserTask类似，一个完整的业务流程最终会走回服务侧，即ServiceTask执行的开始和结束都在workflow服务端，因此这里也是通过业务自查来保证task被下游执行。

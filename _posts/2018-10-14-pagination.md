@@ -4,7 +4,7 @@ title: "几种分页方式在不同使用场景下的优劣势"
 # subtitle: "This is the post subtitle."
 date:   2018-10-14 13:59:35 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'Chinese'
+categories: 'cn'
 ---
 
 分页的主要使用场景大致分为两种，一种是topN查询，这种在实时响应系统中比较常见，另一种是全量查询，在批处理系统中比较常见。

@@ -4,7 +4,7 @@ title: "java.lang.AbstractMethodError【一】——浅析JVM7和JVM8关于invok
 # subtitle: "This is the post subtitle."
 date:   2019-03-30 18:04:54 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'Chinese'
+categories: 'cn'
 ---
 
 ### 前言

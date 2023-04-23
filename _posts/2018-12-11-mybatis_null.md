@@ -4,7 +4,7 @@ title: "线上问题实战：NoSuchPropertyException——null到底有多坑"
 # subtitle: "This is the post subtitle."
 date:   2018-12-11 11:45:33 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'Chinese'
+categories: 'cn'
 ---
 
 ## 问题起因：

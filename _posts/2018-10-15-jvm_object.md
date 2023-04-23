@@ -4,7 +4,7 @@ title: "JVM中对象的内存分布"
 # subtitle: "This is the post subtitle."
 date:   2018-10-15 13:57:15 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'Chinese'
+categories: 'cn'
 ---
 
 JVM中对象的由object header+object instance+padding组成，而object header又由mark word以及klass pointer组成，其中klass pointer和padding是非必需的，后面将会由详细的解释。

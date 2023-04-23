@@ -25,6 +25,12 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+markdown: kramdown
+highlighter: coderay
+kramdown:
+  input: GFM
+  syntax_highlighter: coderay
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

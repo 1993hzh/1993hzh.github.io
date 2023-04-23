@@ -4,7 +4,7 @@ title: "Problems regarding so-called 'Big Key' in redis"
 # subtitle: "This is the post subtitle."
 date:   2023-04-22 21:11:35 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'English'
+categories: 'cn'
 ---
 
 ### Big Key Definition

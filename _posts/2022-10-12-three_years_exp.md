@@ -4,7 +4,7 @@ title: "这三年"
 # subtitle: "This is the post subtitle."
 date:   2022-10-12 16:42:33 +0800
 background: '/assets/images/bg-index.jpg'
-categories: 'Chinese'
+categories: 'cn'
 ---
 
 是很久没有写文章了，提笔的习惯一旦落下一时半会就很难再捡起来，仔细想想可能是因为三年前跳槽去某多多吧，工作忙起来确实没有精力再去整理自己的思路，虽说后面跑路回了外企却也是荒废掉了这个repo。最近工作上有不少感想，便想着在这里再写点东西，也不知道下一次断更会是什么时候，但愿不会太快。

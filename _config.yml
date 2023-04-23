@@ -7,15 +7,22 @@ email: mail@nleo.me
 #   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nleo.me" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: G-XMC20VWYEH
+
+paginate: 10
+paginate_path: "/posts/page:num/"
+
 # twitter_username: jekyllrb
 github_username:  1993hzh
 linkedin_username: 1993hzh
 
 # Build settings
-# theme: jekyll-theme-clean-blog
+theme: jekyll-theme-clean-blog
 remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.

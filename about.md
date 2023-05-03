@@ -1,7 +1,6 @@
 ---
 layout: page
-title: About Me
-background: '/assets/images/bg-about.jpg'
+title: About
 permalink: /about/
 ---
 

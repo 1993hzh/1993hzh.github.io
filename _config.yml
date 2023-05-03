@@ -32,12 +32,12 @@ plugins:
 markdown: kramdown
 highlighter: coderay
 kramdown:
-  input: GFM
+  # input: GFM
   syntax_highlighter: coderay
-#   syntax_highlighter_opts:
-#     line_numbers: table
-#     bold_every: 10
-#     tab_width: 2
+  syntax_highlighter_opts:
+    line_numbers: false
+    bold_every: 10
+    tab_width: 2
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -109,8 +109,8 @@ parent.foo();
 那么AbstractClass可以正常运行便得到了合理的解释，因为protected并不会阻止invokevirtual执行方法调用，至于InterfaceClass为什么会抛出AbstractMethodError，跟上文最后的问题一样未知...
 
 ### 参考
-[1] [https://en.wikipedia.org/wiki/Virtual_method_table](https://en.wikipedia.org/wiki/Virtual_method_table)
-[2] [https://wiki.openjdk.java.net/display/HotSpot/VirtualCalls](https://wiki.openjdk.java.net/display/HotSpot/VirtualCalls)
-[3] [https://wiki.openjdk.java.net/display/HotSpot/InterfaceCalls](https://wiki.openjdk.java.net/display/HotSpot/InterfaceCalls)
-[4] https://www.zhihu.com/question/34846173/answer/60302017
-[5]  [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/readings/interface.pdf](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/readings/interface.pdf)
+1. [https://en.wikipedia.org/wiki/Virtual_method_table](https://en.wikipedia.org/wiki/Virtual_method_table)
+2. [https://wiki.openjdk.java.net/display/HotSpot/VirtualCalls](https://wiki.openjdk.java.net/display/HotSpot/VirtualCalls)
+3. [https://wiki.openjdk.java.net/display/HotSpot/InterfaceCalls](https://wiki.openjdk.java.net/display/HotSpot/InterfaceCalls)
+4. [https://www.zhihu.com/question/34846173/answer/60302017](https://www.zhihu.com/question/34846173/answer/60302017)
+5. [http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/readings/interface.pdf](http://staff.ustc.edu.cn/~bjhua/courses/compiler/2014/readings/interface.pdf)

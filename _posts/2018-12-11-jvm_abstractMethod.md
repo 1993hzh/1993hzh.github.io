@@ -2,6 +2,7 @@
 layout: post
 title: "java.lang.AbstractMethodError【二】——浅析JVM中invokevirtual与invokeinterface的区别"
 # subtitle: "This is the post subtitle."
+comments: true
 date:   2018-12-11 11:47:43 +0800
 background: '/assets/images/bg-index.jpg'
 categories: 'cn'

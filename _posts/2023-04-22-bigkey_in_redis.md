@@ -2,6 +2,7 @@
 layout: post
 title: "Problems regarding so-called 'Big Key' in redis"
 # subtitle: "This is the post subtitle."
+comments: true
 date:   2023-04-22 21:11:35 +0800
 background: '/assets/images/bg-index.jpg'
 categories: 'en'

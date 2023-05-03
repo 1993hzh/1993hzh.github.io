@@ -1,30 +1,35 @@
-author: Leo
+# author:
+#   name: Leo
+#   email: mail@nleo.me
+  
 title: nLeo.me
-email: mail@nleo.me
-# description: >- # this means to ignore newlines until "baseurl:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
+description: "Copyright © 2023 nLeo.\nAll rights reserved.\nPowered by Github Pages."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nleo.me" # the base hostname & protocol for your site, e.g. http://example.com
 google_analytics: G-XMC20VWYEH
 
-paginate: 10
+# theme: minima
+remote_theme: jekyll/minima
+minima:
+  skin: auto
+  date_format: "%b %-d, %Y"
+  social_links:
+    - { platform: github,  user_url: "https://github.com/1993hzh" }
+    - { platform: linkedin, user_url: "https://linkedin.com/in/1993hzh" }
+
+disqus:
+    shortname: nleo
+paginate: 5
 paginate_path: "/posts/page:num/"
-
-# twitter_username: jekyllrb
-github_username:  1993hzh
-linkedin_username: 1993hzh
-
-# Build settings
-# comment below line to avoid github build issue
-# theme: jekyll-theme-clean-blog
-remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
+show_excerpts: true
+header_pages:
+  - about.md
+  - portfolio.md
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-
+  - jekyll-remote-theme
 markdown: kramdown
 highlighter: coderay
 kramdown:

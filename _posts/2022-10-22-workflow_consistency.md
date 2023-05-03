@@ -2,6 +2,7 @@
 layout: post
 title: "Workflow微服务开发中的一致性问题"
 # subtitle: "This is the post subtitle."
+comments: true
 date:   2022-10-22 14:40:13 +0800
 background: '/assets/images/bg-index.jpg'
 categories: 'cn'

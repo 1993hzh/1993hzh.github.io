@@ -2,6 +2,7 @@
 layout: post
 title: "几种分页方式在不同使用场景下的优劣势"
 # subtitle: "This is the post subtitle."
+comments: true
 date:   2018-10-14 13:59:35 +0800
 background: '/assets/images/bg-index.jpg'
 categories: 'cn'

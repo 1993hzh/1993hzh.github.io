@@ -19,7 +19,7 @@ minima:
 
 disqus:
     shortname: nleo
-paginate: 5
+paginate: 10
 paginate_path: "/posts/:num/"
 show_excerpts: true
 # header_pages:

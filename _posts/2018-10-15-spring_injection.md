@@ -4,7 +4,6 @@ title: "浅析Spring injection支持的几种annotation的实现"
 # subtitle: "This is the post subtitle."
 comments: true
 date:   2018-10-15 16:44:03 +0800
-background: '/assets/images/bg-index.jpg'
 categories: 'cn'
 ---
 

@@ -4,7 +4,6 @@ title: "JVM中对象的内存分布"
 # subtitle: "This is the post subtitle."
 comments: true
 date:   2018-10-15 13:57:15 +0800
-background: '/assets/images/bg-index.jpg'
 categories: 'cn'
 ---
 

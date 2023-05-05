@@ -4,7 +4,6 @@ title: "由OGNL的隐式类型转换引发的一个bug"
 # subtitle: "This is the post subtitle."
 comments: true
 date:   2019-05-28 20:28:14 +0800
-background: '/assets/images/bg-index.jpg'
 categories: 'cn'
 ---
 

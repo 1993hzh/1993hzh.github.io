@@ -22,7 +22,8 @@ disqus:
 paginate: 10
 paginate_path: "/posts/:num/"
 show_excerpts: true
-# header_pages:
+header_pages:
+  -
 #   - about.md
 plugins:
   - jekyll-feed

@@ -4,7 +4,6 @@ title: "Analyze Deadlock in Activiti/Flowable"
 # subtitle: "This is the post subtitle."
 comments: true
 date:   2022-12-08 17:08:32 +0800
-background: '/assets/images/bg-index.jpg'
 categories: 'en'
 ---
 

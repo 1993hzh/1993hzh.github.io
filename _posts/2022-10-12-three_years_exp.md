@@ -4,7 +4,6 @@ title: "这三年"
 # subtitle: "This is the post subtitle."
 comments: true
 date:   2022-10-12 16:42:33 +0800
-background: '/assets/images/bg-index.jpg'
 categories: 'cn'
 ---
 

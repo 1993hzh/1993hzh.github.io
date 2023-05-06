@@ -42,6 +42,26 @@
       -->
 
       </header>
+      
+      {% if site.resume.section.interests %}
+      <!-- begin Interests -->
+      <section class="content-section">
+      
+        <header class="section-header">
+          <h2>Research Interests</h2>
+        </header>
+      
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for interest in site.data.interests %}
+            <li>{{ interest.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      
+      </section>
+      <!-- end Interests -->
+      {% endif %}
 
       {% if site.resume.section.experience %}
       <!-- begin Experience -->
@@ -170,26 +190,6 @@
       <!-- end Associations -->
       {% endif %}
 
-      {% if site.resume.section.interests %}
-      <!-- begin Interests -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Outside Interests</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for interest in site.data.interests %}
-            <li>{{ interest.description }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Interests -->
-      {% endif %}
-
       {% if site.resume.section.links %}
       <!-- begin Links -->
       <section class="content-section">
@@ -212,11 +212,11 @@
 
       <footer class="page-footer">
         <p class="footer-line">Copyright © {{ 'now' | date: '%Y' }} nLeo. All rights reserved.</p>
-        <p class="footer-line">Fork me on <a href="{{ site.resume.social_links.github_url }}">GitHub</a>. Powered by Github Pages.</p>
+        <p class="footer-line">
+          Fork me on <a href="{{ site.resume.social_links.github_url }}">GitHub</a>.
+          Powered by <a href="https://github.com/jglovier/resume-template">Github Pages</a>.
+        </p>
       </footer>
-
     </div>
-
   </body>
-
 </html>

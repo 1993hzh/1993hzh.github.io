@@ -1,14 +1,16 @@
-# author:
-#   name: Leo
-#   email: mail@nleo.me
+author:
+  name: Leo
+  email: mail@nleo.me
   
 title: nLeo.me
-description: "Copyright © 2023 nLeo.\nAll rights reserved.\nPowered by Github Pages."
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nleo.me" # the base hostname & protocol for your site, e.g. http://example.com
+description: |
+  
+baseurl: ""
+url: "https://nleo.me"
 google_analytics: G-XMC20VWYEH
 
 # theme: minima
+# begin
 remote_theme: jekyll/minima
 minima:
   skin: auto
@@ -16,6 +18,8 @@ minima:
   social_links:
     - { platform: github,  user_url: "https://github.com/1993hzh" }
     - { platform: linkedin, user_url: "https://linkedin.com/in/1993hzh" }
+# theme: minima
+# end
 
 disqus:
     shortname: nleo
@@ -24,7 +28,7 @@ paginate_path: "/posts/:num/"
 show_excerpts: true
 header_pages:
   -
-#   - about.md
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -39,3 +43,38 @@ kramdown:
     line_numbers: false
     # bold_every: 10
     # tab_width: 2
+
+# resume config
+sass:
+  sass_dir: _sass
+  style: compressed
+resume:
+  theme: default
+  avatar: true
+  name: "Hu Zhonghua"
+  title: "Senior Software Engineer"
+  contact:
+    email: mail@nleo.me
+    telephone: ''
+    address: ''
+  header_intro: |
+    <br>
+    As a senior software engineer with 8+ years of experience with scalable applications in various industries, including HCM, EdTech, and E-commerce.
+    He is experienced in designing and implementing distributed systems with high availability under SaaS architecture.
+    He is proficient in multiple programming languages, including Java, Node.js, GO, Scala, Python, Ruby and C.
+    He has proven track record of refactoring legacy projects to obtain better performance while ensuring high level of code quality and adherence to best practices.
+    He has good English speaking, reading and writing abilities.
+  looking_for_work: false
+  social_links:
+    github_url: "https://github.com/1993hzh"
+    linkedin_url: "https://www.linkedin.com/in/1993hzh"
+    website_url: "https://nleo.me"
+  section:
+    interests: true
+    experience: true
+    education: true
+    projects: true
+    skills: false
+    recognition: false
+    links: false
+    associations: false

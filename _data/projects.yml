@@ -1,0 +1,121 @@
+# Projects
+
+- project: SAP Learning Site
+  role: Primary Developer
+  duration: Apr, 2023 &mdash; Present
+  url: "https://learning.sap.com"
+  description: >
+    SAP Learning can be beneficial for individuals who are interested in SAP technologies, solutions, products and so on.
+    It is an online education platform like Linkedin Learning.
+    People can study, practice, pass exam to gain SAP certifications in SAP Learning.
+
+- project: SAP Successfactors Workflow Service
+  role: Primary Developer
+  duration: May, 2021 &mdash; Mar, 2023
+  # url: "#"
+  description: >
+    This project belongs to SAP Successfactors microservice transformation.
+    It was developed to migrate embedded workflow engine with new technology stack.
+    It can be used to orchestrate business flows for developers or approve request for customers.
+
+- project: Community Outing Helper
+  role: Primary Developer
+  duration: Apr, 2022 &mdash; May, 2022
+  url: "https://github.com/1993hzh/outing-helper"
+  description: >
+    This is a WeChat mini-program based on WeChat Cloud Development.
+    It was developed temporarily to meet the needs of limited time travel for more than 2,000 residents in a community during the epidemic period.
+    It has been taken offline and all relevant data has been cleared.
+
+- project: Community Nucleic Acid Test Call Helper
+  role: Primary Developer
+  duration: Apr, 2022 &mdash; May, 2022
+  # url: "https://github.com/1993hzh/call-helper"
+  description: >
+    This is a WeChat mini-program based on WeChat Cloud Development.
+    It was developed to help residents get better notified when taking NAT and reduce work load for community workers in our community during the epidemic period.
+    It has been taken offline and all relevant data has been cleared.
+
+- project: SAP Successfactors New Data Service
+  role: Primary Developer
+  duration: Dec, 2020 &mdash; Mar, 2021
+  # url: "#"
+  description: >
+    This project belongs to SAP Successfactors microservice transformation.
+    It can support object-level and field-level extension when reading/writing data.
+    It was developed based on SAP CDS/CQN and SpringBoot.
+
+- project: SAP Successfactors Metadata Service
+  role: Primary Developer
+  duration: Apr, 2020 &mdash; Nov, 2020
+  # url: "#"
+  description: >
+    This project belongs to SAP Successfactors microservice transformation.
+    It can consolidate data models from different module teams and customers with our own defined schema.
+    Inspired by JSON schema and CDS.
+
+- project: Pinduoduo Commodity Selection Service
+  role: Primary Developer
+  duration: Oct, 2019 &mdash; Feb, 2020
+  # url: "#"
+  description: >
+    This project is used by operators to select top rated commodities for major promotion activities like 'Double Eleven', 'Double Twelve'.
+    Supports hourly incremental synchronization and daily full synchronization of commodities.
+    It writes millions of effective commodity data from entire website to Hbase and ES through Kafka messages.
+    It generates ES queries based on filter rules to perform selections.
+
+- project: Youzan Security Access Management System
+  role: Developer
+  duration: Dec, 2018 &mdash; Jun, 2019
+  # url: "#"
+  description: >
+    It supports role based access control with menus and APIs for retail merchants in both web and app.
+    It also supports instance based access control in gateway for user requests.
+
+- project: SAP Successfactors Metadata Framework
+  role: Developer
+  duration: Aug, 2015 &mdash; Nov, 2018
+  # url: "#"
+  description: >
+    It allows users to create custom data objects and define data relationships, as well as add custom fields, forms, and workflows to meet unique HR business requirements.
+    It enables organizations to create their own data models and manage data in a more structured and consistent way.
+    Customers can also create custom rules, validations, and calculations for data fields to automate HR processes and improve data accuracy.
+    
+- project: IBM Maintenance Contract Lifecycle Management System
+  role: Developer
+  duration: Dec, 2018 &mdash; Jun, 2019
+  # url: "#"
+  description: >
+    It can help manage the entire lifecycle of company maintenance contracts.
+    Contract data is transformed by ETL jobs and presented in Cognos report.
+    
+- project: Unified Identity Authentication Framework
+  role: Primary Developer
+  duration: Dec, 2013 &mdash; Feb, 2014
+  # url: "#"
+  description: >
+    It can manage user identity and act as identity provider to provide SSO among multiple systems.
+    It supports role based access control with URLs.
+    
+- project: Unified Communications Server Management System
+  role: Developer
+  duration: Mar, 2013 &mdash; Nov, 2013
+  # url: "#"
+  description: >
+    It integrates call centers, video conferences, video surveillance, vehicle and personnel access control, instant messaging into one network communication server.
+
+- project: CUIT Intelligent Evaluation Platform
+  role: Developer
+  duration: Jul, 2012 &mdash; Jun, 2013
+  # url: "#"
+  description: >
+    It's a key research project of Sichuan Provincial Department of Education in 2012.
+    It's used for teachers and students to share educational resources, take assessment and interact online.
+
+- project: Emergency Command System
+  role: Developer
+  duration: Mar, 2012 &mdash; Jun, 2012
+  # url: "#"
+  description: >
+    It follows the technical requirements and standards of the national emergency platform system formulated by the State Council.
+    Provides a unified alarm platform and joint emergency command information system for various emergencies.

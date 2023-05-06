@@ -1,0 +1,18 @@
+- degree: Master Degree of Software Engineering
+  uni: Fudan University
+  year: 2022 &mdash; now
+  awards: 
+  summary: >
+    ...
+
+- degree: Bachelor of Software Engineering
+  uni: Chengdu University of Information Technology
+  year: 2010 &mdash; 2014
+  awards:
+    # - award: Excellent graduation thesis
+    # - award: First Prize winner of the 12th "Challenge Cup" Sichuan Province Extracurricular Academic and Technological Works Competition for College Students
+  summary: >
+    - Passed CET-6 in 2011.<br>
+    - Joined IIP in sophomore year, as a core developer completed several projects led by supervisor.<br>
+    - Won first prize of 12th "Challenge Cup" Sichuan Province.<br>
+    - Obtained an excellent graduation thesis.

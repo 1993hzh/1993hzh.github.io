@@ -5,19 +5,19 @@
   summary: >
     <ul class="resume-item-list">
       <li>
-        Led the design and implementation of a workflow microservice with Java
+        Led architecture design and implementation of a workflow microservice with Java
       </li>
       <li>
-        Led the design and implementation of SAP learning product with Node.js
+        Led architecture design and implementation of SAP learning product with Node.js
       </li>
       <li>
-        Responsible for technical decision/sharing, architecture design, implementation and code review
+        Implemented test-driven development methodology resulting in 87% test code coverage
       </li>
       <li>
         Designed and implemented a new async execution mechanism that improved throughput from ~30% to ~100%
       </li>
       <li>
-        Reduced deployment cost (cpu: 16 -> 6, mem: 64G -> 12G)
+        Reduced deployment cost (cpu: 16c -> 6c, mem: 64G -> 12G)
       </li>
     </ul>
 
@@ -30,13 +30,10 @@
         Led a team of 4 developers for commodity selection service
       </li>
       <li>
-        Responsible for collaborating with upstream/downstream team to align technical solution
-      </li>
-      <li>
-        Responsible for the development of requirements for activity registration(such as billion subsidies, flash sales, brand sales, etc.)
-      </li>
-      <li>
         Improved commodity selection delay from daily to near real-time(seconds)
+      </li>
+      <li>
+        Set up unit test/integration test and achieved 84% test code coverage for core features
       </li>
       <li>
         Received several top monthly performance review
@@ -49,10 +46,10 @@
   summary: >
     <ul class="resume-item-list">
       <li>
-        Responsible for the development of SAM permission framework, which provides RBAC for B2B retail merchant backend menus and APIs
+        Led the design and development of synchronization system for cross-environment permission config data
       </li>
       <li>
-        Led the design and development of synchronization system for cross-environment permission config data
+        Set up unit test/integration test and achieved 92% test code coverage overall
       </li>
       <li>
         Successfully delivered config sync system on time and under budget, decreased the error rate and incident rate of manual configuration
@@ -65,16 +62,13 @@
   summary: >
     <ul class="resume-item-list">
       <li>
-        Responsible for data export/import, permission module in a persistence framework of the low-code platform
+        Re-implemented MDF(low-code platform) data export, solved OOM caused by large-scale data(tens of millions), overall execution time was improved by 30%, overall code coverage up to 89%+
       </li>
       <li>
-        Responsible for analyzing and dealing with customer issues, performance issues, and security issues in production
+        Re-implemented MDF RBP(Role-based Permission), reduced time cost for complex SQL by in-memory filter(>1min -> ~1ms)
       </li>
       <li>
-        Re-implemented MDF Export, solved OOM caused by large-scale data(tens of millions), overall execution time was improved by 30%, overall code coverage up to 89%+
-      </li>
-      <li>
-        Re-implemented MDF RBP, implemented user-based GDPR read auditing
+        Designed and implemented user-based GDPR read auditing for MDF data export and RBP
       </li>
       <li>
         Received outstanding performance review and company award regarding GDPR project

@@ -1,4 +1,4 @@
 ---
 layout: resume
-permalink: /secret-cv/
+permalink: /cv
 ---

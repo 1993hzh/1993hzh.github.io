@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Investigation of AMQP1.0 over WebSocket in Python"
+# subtitle: "This is the post subtitle."
+comments: true
+date:   2026-01-09 18:52:21 +0800
+categories: 'en'
+---
+
 # Investigation of Python Qpid Proton
 
 ## Background

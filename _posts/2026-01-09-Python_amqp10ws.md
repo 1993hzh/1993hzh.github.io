@@ -191,11 +191,11 @@ def _connect(
         **kwargs
 ) -> Connection:
   conn = self.connection(handler)
-	...
+  ...
   connector = _Connector(conn)
-	...
+  ...
   conn._overrides = connector
-	...
+  ...
   conn.open()
 ```
 
@@ -255,12 +255,7 @@ This approach requires **bypassing or re-implementing Proton’s I/O layer**, wh
 
 ## References
 
-1. Messaging Protocols and Libraries
-    https://help.sap.com/docs/event-mesh/event-mesh/messaging-protocols-and-libraries
-2. `@sap/xb-msg-amqp-v100`
-    https://www.npmjs.com/package/@sap/xb-msg-amqp-v100
-3. SAP Event Mesh (Shared)
-    https://cap.cloud.sap/docs/node.js/messaging#event-mesh-shared
-4. AMQP WebSocket Binding Specification
-    https://docs.oasis-open.org/amqp-bindmap/amqp-wsb/v1.0/cs01/amqp-wsb-v1.0-cs01.html
-
+1. [Messaging Protocols and Libraries](https://help.sap.com/docs/event-mesh/event-mesh/messaging-protocols-and-libraries)
+2. [@sap/xb-msg-amqp-v100](https://www.npmjs.com/package/@sap/xb-msg-amqp-v100)
+3. [SAP Event Mesh (Shared)](https://cap.cloud.sap/docs/node.js/messaging#event-mesh-shared)
+4. [AMQP WebSocket Binding Specification](https://docs.oasis-open.org/amqp-bindmap/amqp-wsb/v1.0/cs01/amqp-wsb-v1.0-cs01.html)
